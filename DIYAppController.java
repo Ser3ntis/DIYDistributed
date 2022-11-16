@@ -52,7 +52,7 @@ public class DIYAppController
 		// Mutex lock for the total sum.
 		ReentrantLock sumLock=new ReentrantLock();
 		
-		if(args.length < 2 && args.length > 3) 
+		if(args.length < 2 || args.length > 3) 
 			
 		{
 			System.out.println("Error. Arguments to be provided: portNum fileName (optional)packetSize");
